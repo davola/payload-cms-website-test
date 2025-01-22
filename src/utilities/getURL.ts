@@ -1,5 +1,4 @@
 import canUseDOM from './canUseDOM'
-import * as process from 'node:process'
 
 export const getServerSideURL = () => {
   let url = process.env.NEXT_PUBLIC_SERVER_URL
