@@ -1,16 +1,16 @@
 services:
-  payload:
-    image: node:18-alpine
-    ports:
-      - '3000:3000'
-    volumes:
-      - .:/home/node/app
-    working_dir: /home/node/app/
-    entrypoint: ["/bin/sh", "-c", "./src/bin/wait-for-it.sh yarn install && yarn dev"]
-    depends_on:
-      - mongo
-    env_file:
-      - .env
+#  payload:
+#    image: node:18-alpine
+#    ports:
+#      - '3000:3000'
+#    volumes:
+#      - .:/home/node/app
+#    working_dir: /home/node/app/
+#    entrypoint: ["/bin/sh", "-c", "./src/bin/wait-for-it.sh yarn install && yarn dev"]
+#    depends_on:
+#      - mongo
+#    env_file:
+#      - .env
 
   mongo:
     image: mongo:latest
